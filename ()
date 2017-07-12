@@ -1,0 +1,34 @@
+
+# Please enter the commit message for your changes. Lines starting
+Bloom Filter and test script
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   xiaoshuo/ItemScript/Item2mysql.py
+#	new file:   xiaoshuo/ItemScript/__init__.py
+#	deleted:    xiaoshuo/redis_pipelines.py
+#	new file:   xiaoshuo/scrapy_redis/BloomfilterOnRedis.py
+#	new file:   xiaoshuo/scrapy_redis/__init__.py
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/BloomfilterOnRedis.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/__init__.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/connection.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/defaults.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/dupefilter.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/picklecompat.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/pipelines.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/queue.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/scheduler.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/spiders.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/__pycache__/utils.cpython-34.pyc
+#	new file:   xiaoshuo/scrapy_redis/connection.py
+#	new file:   xiaoshuo/scrapy_redis/defaults.py
+#	new file:   xiaoshuo/scrapy_redis/dupefilter.py
+#	new file:   xiaoshuo/scrapy_redis/picklecompat.py
+#	new file:   xiaoshuo/scrapy_redis/pipelines.py
+#	new file:   xiaoshuo/scrapy_redis/queue.py
+#	new file:   xiaoshuo/scrapy_redis/scheduler.py
+#	new file:   xiaoshuo/scrapy_redis/spiders.py
+#	new file:   xiaoshuo/scrapy_redis/utils.py
+#

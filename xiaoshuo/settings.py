@@ -43,7 +43,7 @@ CONCURRENT_REQUESTS = 32
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 1
+DOWNLOAD_DELAY = 0.3
 # The download delay setting will honor only one of:
 CONCURRENT_REQUESTS_PER_DOMAIN = 50
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -62,9 +62,10 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 50
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'xiaoshuo.middlewares.XiaoshuoSpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+    'xiaoshuo.middlewares.XiaoshuoSpiderMiddleware': 543,
+ #   'xiaoshuo.middlewares.IgnoreItem':544
+}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
@@ -84,6 +85,9 @@ DOWNLOADER_MIDDLEWARES = {
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'xiaoshuo.pipelines.XiaoshuoPipeline': 300,
+    'scrapy_redis.pipelines.RedisPipeline': 300,
+ #   'xiaoshuo.master_pipelines.redis_item':400,
+
 }
 
 
@@ -118,9 +122,16 @@ MYSQL_PASSWD = '1024'
 
 #redis cofigure
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderPriorityQueue"
 
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 SCHEDULER_PERSIST= True
+
+#boomfilter去重
+FILTER_URL = None
+FILTER_HOST = 'localhost'
+FILTER_PORT = 6379
+FILTER_DB = 0
+

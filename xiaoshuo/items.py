@@ -29,7 +29,7 @@ class DcontentItem(scrapy.Item):
     chaptername = scrapy.Field()        #章节名字
 
 # Item loader
-class Chapterqueueloader(ItemLoader):
-    default_input_processor = MapCompose(lambda s: s.strip())
-    default_output_processor = TakeFirst()
-    description = Join()
+#class Chapterqueueloader(ItemLoader):
+#    default_input_processor = MapCompose(lambda s: s.strip())
+#    default_output_processor = TakeFirst()
+#    description = Join()
